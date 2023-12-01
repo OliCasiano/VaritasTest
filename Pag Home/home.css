@@ -1,0 +1,103 @@
+/* * {
+    outline: solid 2px red;
+} */
+
+.logo {
+    height: 100px;
+    margin: 15px;
+}
+
+header {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    background-image: none;
+}
+
+body {
+    background-image: url(../imgVaritas/home.jpeg);
+    background-size: cover;
+}
+
+section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.quienesSomos {
+    margin: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: aliceblue;
+}
+
+.queHacemos {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: aliceblue;
+}
+
+.contacto {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    align-items: center;
+}
+
+h3 {
+    font-family: nabla;
+    font-size: 50px;
+    height: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p {
+    font-family: Dhurjati;
+    width: 800px;
+    line-height: 25px;
+    font-size: 35px;
+    color: aliceblue;
+    text-shadow:
+        2px 2px 0 #000,
+        2px 2px 0 #000,
+        2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+.imgQueHacemos{
+    height: 200px;
+    width: 400px;
+}
+
+.imgQuienesSomos {
+    height: 200px;
+    width: 400px;
+}
+
+li {
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow:
+        4px 3px 0 #000,
+        4px 3px 0 #000,
+        4px 3px 0 #000,
+        4px 3px 0 #000;
+}
+

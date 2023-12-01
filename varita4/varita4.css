@@ -1,0 +1,51 @@
+* {
+    /* outline: solid 2px red; */
+}
+
+.logo {
+    height: 150px;
+    margin: 15px;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../imgVaritas/fondoindividualvaritas.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    color: aliceblue;
+    font-size: 90px;
+    font-family: "nabla";
+    margin-top: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div img {
+    border-radius: 20px;
+    -webkit-box-shadow: 11px 13px 0px -3px rgba(0,0,0,0.87);
+    -moz-box-shadow: 11px 13px 0px -3px rgba(0,0,0,0.87);
+    box-shadow: 11px 13px 0px -3px rgba(0,0,0,0.87);
+
+}
+
+p {
+    margin: 50px;
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow:
+        4px 3px 0 #000,
+        4px 3px 0 #000,
+        4px 3px 0 #000,
+        4px 3px 0 #000;
+}

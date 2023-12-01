@@ -1,0 +1,86 @@
+/* *{
+    outline: solid 1px red;
+} */
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+
+/* Establece un cursor transparente para ocultar el cursor predeterminado */
+body,
+#custom-cursor {
+    cursor: none;
+    background-image: url(./fondoinicio.png);
+
+}
+
+h1{
+    margin-bottom: 100px;
+    font-size: 150px;
+    font-family: "nabla";
+}
+
+
+
+#custom-cursor {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-image: url('./cursor.png');
+    background-size: cover;
+    pointer-events: none;
+    /* Evita que el cursor personalizado afecte a los elementos */
+    animation: trail 0.8s ease-out forwards;
+    /* Agrega una animación al rastro de estrellas */
+}
+
+.star {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url('./estrella.png');
+    background-size: cover;
+    pointer-events: none;
+    /* Evita que las estrellas afecten a los elementos */
+    animation: twinkle 3s infinite;
+    /* Agrega una animación de parpadeo a las estrellas */
+}
+
+/* boton efecto zoom */
+
+.zoom-button {
+    font-family: "nabla";
+    width: 300px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #072a41;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 3px 39px 25px rgba(252, 249, 252, 0.59);
+    -moz-box-shadow: 2px 3px 39px 25px rgba(252, 249, 252, 0.59);
+    box-shadow: 2px 3px 39px 25px rgba(252, 249, 252, 0.59);
+}
+
+.zoom-button:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s ease, opacity 1.5s ease;
+}
+
+.content {
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}

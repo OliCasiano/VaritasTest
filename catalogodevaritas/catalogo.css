@@ -1,0 +1,178 @@
+/* * {
+    outline: solid 2px red;
+} */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornsilk;
+    background-image: url(../imgVaritas/fondocatalogo.jpeg);
+    background-size: cover;
+
+}
+
+header{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.logo{
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+h2 {
+    margin-bottom: 750px;
+    font-family: "nabla";
+    font-size: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-top: 300px;
+    height: 300px;
+    width: 900px;
+    perspective: 400px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tarjeta {
+    height: 150px;
+    width: 90px;
+    font-size: 40px;
+    position: absolute;
+    top: 70px;
+    left: 400px;
+    border-radius: 10px;
+    text-align: center;
+    animation: carrusel 20s linear infinite;
+    /* Tiempo de toda la animacion, lineal y infinita para que no pare */
+    filter: contrast(150%);
+
+
+}
+
+@keyframes carrusel {
+    from {
+        transform: rotateY(360deg) translateZ(250px);
+        z-index: 10;
+        opacity: 0.9;
+        /*Bajamos la opacidad para que se vean las de atras */
+
+    }
+
+    50% {
+        z-index: -10;
+
+    }
+
+    to {
+        transform: rotateX(0deg) translateZ(250PX);
+        z-index: 10;
+        opacity: 0.9;
+        /*Lo mismo que en el from para que sea un poco transparente*/
+
+    }
+}
+
+#varita8 {
+    background-image: url(/imgVaritas/varita8.png);
+    background-size: cover;
+}
+
+#varita8:hover {
+    box-shadow: 0px 0px 10px 10px green;
+}
+
+#varita7 {
+    background-image: url(/imgVaritas/varita7.png);
+    background-size: cover;
+    animation-delay: -2.5s;
+    /*  Dividimos los tiempos entre el tiempo total de la animacion para que queden separadas de la misma forma */
+}
+
+#varita7:hover {
+    box-shadow: 0px 0px 10px 10px orange;
+}
+
+#varita6 {
+    background-image: url(/imgVaritas/varita6.png);
+    background-size: cover;
+    animation-delay: -5s;
+}
+
+#varita6:hover {
+    box-shadow: 0px 0px 10px 10px blue;
+}
+
+#varita5 {
+    background-image: url(/imgVaritas/varita5.png);
+    background-size: cover;
+    animation-delay: -7.5s;
+}
+
+#varita5:hover {
+    box-shadow: 0px 0px 10px 10px red;
+}
+
+#varita4 {
+    background-image: url(/imgVaritas/varita4.png);
+    background-size: cover;
+    animation-delay: -10s;
+}
+
+#varita4:hover {
+    box-shadow: 0px 0px 10px 10px cyan;
+}
+
+#varita3 {
+    background-image: url(/imgVaritas/varita3.png);
+    background-size: cover;
+    animation-delay: -12.5s;
+}
+
+#varita3:hover {
+    box-shadow: 0px 0px 10px 10px purple;
+}
+
+#varita2 {
+    background-image: url(/imgVaritas/varita2.png);
+    background-size: cover;
+    animation-delay: -15s;
+}
+
+#varita2:hover {
+    box-shadow: 0px 0px 10px 10px rgb(4, 4, 98);
+}
+
+#varita1 {
+    background-image: url(/imgVaritas/varita1.png);
+    background-size: cover;
+    animation-delay: -17.5s;
+}
+
+#varita1:hover {
+    box-shadow: 0px 0px 10px 10px rgb(182, 182, 193);
+}
+
+.tarjeta h3 {
+    font-size: 10px;
+    margin-top: 120px;
+    font-family: "nabla";
+    background-color: #072a41;
+    cursor: pointer;
+}
+
